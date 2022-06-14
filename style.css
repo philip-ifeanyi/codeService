@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: hsl(0, 100%, 74%) url("bg-intro-desktop.png") no-repeat center center/cover; 
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+}
+
+span {
+  font-weight: 600;
+}
+
+#container {
+  display: flex;
+  max-width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+#container .container-text, #container .container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+#container .container-text {
+  align-items: flex-start;
+}
+
+#container .container-text h1 {
+  font-size: 2.7rem;
+  line-height: 1;
+  padding-bottom: 1rem;
+}
+
+#container .container-text p {
+  font-size: 14px;
+}
+
+#container .container-text {
+  text-align: left;
+}
+
+#container .container-form .plan {
+  background: hsl(248, 32%, 49%);
+  padding: 0.7rem 2.6rem;
+  width: 86%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 13px;
+  box-shadow: 0px 5px rgb(0,0,0,0.1);
+}
+
+#container .container-form .form-wrapper {
+  padding: 2rem 1.5rem;
+  background-color: #fff;
+  width: 86%;
+  border-radius: 5px;
+  color: #000;
+  box-shadow: 0px 5px rgb(0,0,0,0.1);
+  margin-bottom: 1rem;
+
+}
+
+#container .container-form .form-wrapper input {
+  display: block;
+  width: 100%;
+  height: 2.2rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ddd;
+}
+
+#container .container-form .form-wrapper input:focus {
+  outline: none;
+  border-color: hsl(248, 32%, 49%);
+}
+
+#container .container-form .form-wrapper .error-message {
+  display: none;
+  color: hsl(0, 100%, 74%);
+  padding-top: 5px;
+  text-align: right;
+}
+
+#container .container-form .form-wrapper input:focus:invalid {
+  border-color: hsl(0, 100%, 74%);
+}
+
+#container .container-form .form-wrapper input:focus:invalid ~ .error-message {
+  display: block; 
+}
+
+#container .container-form .form-wrapper input:focus:valid {
+  border-color: hsl(154, 59%, 51%);
+}
+
+#container .container-form .form-wrapper .button {
+  background-color: hsl(154, 59%, 51%);
+  width: 100%;
+  height: 2.2rem;
+  margin: 1rem 0;
+  padding: 0 0.7rem;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  outline: none;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
+
+#container .container-form .form-wrapper .button:hover {
+  cursor: pointer;
+}
+
+#container .container-form .form-wrapper p {
+  font-size: 8px;
+  text-align: center;
+  color: #ccc;
+}
+
+@media screen and (max-width: 528px) {
+  body {
+    background: hsl(0, 100%, 74%) url("bg-intro-mobile.png") no-repeat 
+  }
+
+  #container {
+    flex-direction: column;
+    margin: 1rem auto;
+    text-align: center;
+    height: 90%;
+  }
+
+  #container .container-text {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  #container .container-text h1 {
+    font-size: 2rem;
+  }
+
+  #container .container-text p {
+    text-align: center;
+    line-height: 1.5;
+  }
+}
