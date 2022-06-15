@@ -165,4 +165,8 @@ span {
     text-align: center;
     line-height: 1.5;
   }
+
+  #container .container-form .form-wrapper .button {
+    font-size: 12px;
+  }
 }
