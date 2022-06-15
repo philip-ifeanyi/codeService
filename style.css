@@ -150,6 +150,7 @@ span {
     margin: 1rem auto;
     text-align: center;
     height: 90%;
+    max-width: 90%;
   }
 
   #container .container-text {
@@ -168,5 +169,9 @@ span {
 
   #container .container-form .form-wrapper .button {
     font-size: 10px;
+  }
+
+  #container .container-form .plan, #container .container-form .form-wrapper {
+    width: 90%;
   }
 }
